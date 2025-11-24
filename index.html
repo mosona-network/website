@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosona Network ✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mosona: {
+                            50: '#f2fbf7',
+                            100: '#dff3e9',
+                            300: '#a8dcc0',
+                            500: '#7fb89a',
+                            600: '#6da388',
+                            800: '#3e5c4e',
+                            900: '#2a3b33',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+    </style>
+</head>
+<body class="bg-mosona-50 text-gray-700 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-mosona-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <div class="w-6 h-6 bg-mosona-300 rounded-lg"></div>
+                    <span class="font-bold text-xl tracking-tight text-mosona-900">Mosona Network</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-gray-600 hover:text-mosona-600 transition font-medium">Home</a>
+                    <a href="#features" class="text-gray-600 hover:text-mosona-600 transition font-medium">
+                        Features
+                    </a>
+                    <a href="#projects" class="text-gray-600 hover:text-mosona-600 transition font-medium">
+                        Projects
+                    </a>
+                    <button class="bg-mosona-500 text-white px-5 py-2 rounded-full hover:bg-mosona-600 transition shadow-lg shadow-mosona-500/30 font-medium">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-mosona-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-0 lg:pt-16 lg:pb-0 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="text-center lg:text-left z-10">
+                    <div class="inline-block bg-mosona-100 text-mosona-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 fade-in-up">
+                        ✨ Mosona Network Website Launched!
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6 fade-in-up delay-100">
+                        Connect world,<br>
+                        <span class="text-mosona-500">Enliven</span> your life!
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 fade-in-up delay-200 max-w-2xl mx-auto lg:mx-0">
+                        Mosona Network is dedicated to creating more fun and useful things.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 fade-in-up delay-200">
+                        <button class="bg-mosona-500 text-white px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-mosona-600 hover:scale-105 transition duration-300 shadow-xl shadow-mosona-500/30">
+                            Get Started
+                        </button>
+                        <button class="bg-white text-mosona-600 border-2 border-mosona-100 px-8 py-3.5 rounded-full text-lg font-semibold hover:border-mosona-300 hover:bg-mosona-50 transition duration-300">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center lg:justify-end fade-in-up delay-200">
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] bg-mosona-200 rounded-full blur-3xl opacity-50 -z-10"></div>
+                    
+                    <div class="relative w-[18rem] h-[18rem] lg:w-[30rem] lg:h-[30rem] rounded-3xl transition duration-500 flex items-center justify-center group lg:mt-24">
+                         <img src="/msn.avif" alt="Mosona Mascot" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Placeholder?</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">placeholder placeholder placeholder placeholder placeholder</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-mosona-50 border border-mosona-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-mosona-200 rounded-2xl flex items-center justify-center text-2xl mb-6">⚡</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Placeholder</h3>
+                    <p class="text-gray-600">placeholder placeholder placeholder placeholder placeholder</p>
+                </div>
+                
+                <div class="p-8 rounded-3xl bg-mosona-50 border border-mosona-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-mosona-200 rounded-2xl flex items-center justify-center text-2xl mb-6">🛡️</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Placeholder</h3>
+                    <p class="text-gray-600">placeholder placeholder placeholder placeholder placeholder</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-mosona-50 border border-mosona-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-mosona-200 rounded-2xl flex items-center justify-center text-2xl mb-6">💚</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Placeholder</h3>
+                    <p class="text-gray-600">placeholder placeholder placeholder placeholder placeholder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Projects</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">
+                    Our exciting projects that showcase innovation and creativity.
+                </p>
+            </div>
+
+            <div>
+                <div class="rounded-xl hover:bg-mosona-100/30 cursor-pointer transition duration-300 flex flex-row justify-between">
+                    <div class="flex flex-col p-5">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Mosona Manager</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Designed as a team-oriented project management server monitor and terminal management tool, featuring comprehensive project permission control and SSH-driven remote management protocol.</p>
+                        <p class="text-mosona-500 font-semibold">Learn More →</p> 
+                    </div>
+                    <div class="relative h-48">
+                        <div class="w-64 h-48 bg-mosona-100 rounded-xl"></div>
+                        <img src="/mm.avif" alt="Mosona Manager" class="w-36 h-36 absolute -bottom-10 -right-14 rounded-lg object-cover">
+                    </div>
+                </div>
+                <div class="mt-8 rounded-xl hover:bg-mosona-100/30 cursor-pointer transition duration-300 flex flex-row justify-between">
+                    <div class="relative h-48">
+                        <div class="w-64 h-48 bg-mosona-100 rounded-xl"></div>
+                        <div class="w-16 h-16 absolute bg-mosona-300 -bottom-3 -left-3"></div>
+                    </div>
+                    <div class="flex flex-col p-5 text-right">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">KiNet Cloud</h3>
+                        <p class="text-gray-600 mb-4 flex-1">
+                            A next-generation IDC cloud platform, providing users with efficient, stable, and secure cloud computing services through advanced virtualization technology and global data centers.
+                        </p>
+                        <p class="text-mosona-500 font-semibold">Learn More →</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-mosona-500 to-mosona-600 rounded-[2.5rem] p-12 text-center text-white shadow-2xl shadow-mosona-500/40 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                    <div class="absolute -top-24 -left-24 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 relative z-10">Placeholder</h2>
+                <p class="text-mosona-100 text-lg max-w-2xl mx-auto relative z-10">placeholder placeholder placeholder placeholder!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2.5">
+                <div class="w-6 h-6 bg-mosona-300 rounded-lg"></div>
+                <span class="font-bold text-gray-900">Mosona Network</span>
+            </div>
+            <div class="text-sm text-gray-500">
+                &copy; 2025 Mosona Network. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://github.com/mosona-network" target="_blank" class="text-gray-400 hover:text-mosona-500 transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
