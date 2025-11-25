@@ -143,7 +143,7 @@
         </div>
     </section>
 
-        <section id="projects" class="py-20 bg-white">
+    <section id="projects" class="py-20 bg-white overflow-x-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Projects</h2>
@@ -153,27 +153,29 @@
             </div>
 
             <div>
-                <div class="rounded-xl hover:bg-mosona-100/30 cursor-pointer transition duration-300 flex flex-row justify-between">
+                <div class="rounded-xl hover:bg-mosona-100/30 cursor-pointer transition duration-300 flex flex-col gap-1 md:flex-row justify-between">
+                    <div class="relative md:h-48 flex justify-end block md:hidden">
+                        <img src="/mm-s.avif" alt="Mosona Manager" class="max-w-full w-full h-full md:w-[34rem] md:h-48 rounded-lg object-cover">
+                        <img src="/mm.avif" alt="Logo" class="w-36 h-36 absolute -bottom-10 -right-11 sm:-right-14 rounded-lg object-cover">
+                    </div>
                     <div class="flex flex-col p-5">
                         <h3 class="text-xl font-bold mb-3 text-gray-900">Mosona Manager</h3>
                         <p class="text-gray-600 mb-4 flex-1">Designed as a team-oriented project management server monitor and terminal management tool, featuring comprehensive project permission control and SSH-driven remote management protocol.</p>
                         <p class="text-mosona-500 font-semibold">Learn More →</p> 
                     </div>
-                    <div class="relative h-48">
-                        <div class="w-64 h-48 bg-mosona-100 rounded-xl"></div>
-                        <img src="/mm.avif" alt="Mosona Manager" class="w-36 h-36 absolute -bottom-10 -right-14 rounded-lg object-cover">
+                    <div class="relative md:h-48 flex justify-end hidden md:block">
+                        <img src="/mm-s.avif" alt="Mosona Manager" class="max-w-full w-full h-full md:w-[34rem] md:h-48 rounded-lg object-cover">
+                        <img src="/mm.avif" alt="Logo" class="w-36 h-36 absolute -bottom-10 -right-11 sm:-right-14 rounded-lg object-cover">
                     </div>
                 </div>
-                <div class="mt-8 rounded-xl hover:bg-mosona-100/30 cursor-pointer transition duration-300 flex flex-row justify-between">
-                    <div class="relative h-48">
-                        <div class="w-64 h-48 bg-mosona-100 rounded-xl"></div>
-                        <div class="w-16 h-16 absolute bg-mosona-300 -bottom-3 -left-3"></div>
+                <div class="mt-8 rounded-xl hover:bg-mosona-100/30 cursor-pointer transition duration-300 flex flex-col gap-1 md:flex-row justify-between">
+                    <div class="relative md:h-48 flex justify-end">
+                        <img src="/msn.avif" alt="KiNet Cloud" class="bg-mosona-100 max-w-full w-full h-full md:w-[34rem] md:h-48 rounded-lg object-cover">
+                        <img src="/mm.avif" alt="Logo" class="w-36 h-36 absolute -bottom-10 -left-11 sm:-left-14 rounded-lg object-cover">
                     </div>
-                    <div class="flex flex-col p-5 text-right">
+                    <div class="flex flex-col p-5 md:text-right">
                         <h3 class="text-xl font-bold mb-3 text-gray-900">KiNet Cloud</h3>
-                        <p class="text-gray-600 mb-4 flex-1">
-                            A next-generation IDC cloud platform, providing users with efficient, stable, and secure cloud computing services through advanced virtualization technology and global data centers.
-                        </p>
+                        <p class="text-gray-600 mb-4 flex-1">Designed as a team-oriented project management server monitor and terminal management tool, featuring comprehensive project permission control and SSH-driven remote management protocol.</p>
                         <p class="text-mosona-500 font-semibold">Learn More →</p> 
                     </div>
                 </div>
@@ -205,6 +207,7 @@
                 &copy; 2025 Mosona Network. All rights reserved.
             </div>
             <div class="flex gap-6">
+                <a href="mailto:admin@mosona.cc" target="_blank" class="text-gray-400 hover:text-mosona-500 transition">Email</a>
                 <a href="https://github.com/mosona-network" target="_blank" class="text-gray-400 hover:text-mosona-500 transition">GitHub</a>
             </div>
         </div>
